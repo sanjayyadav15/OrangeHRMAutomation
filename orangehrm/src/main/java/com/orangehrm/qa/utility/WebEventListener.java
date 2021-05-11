@@ -56,7 +56,7 @@ public class WebEventListener implements WebDriverEventListener {
 	public void onException(Throwable error, WebDriver driver) {
 		System.out.println("Exception occured: " + error);
 		try {
-			TestUtil.takeScreenshotAtEndOfTest();
+			TestUtil.takeScreenshotAtEndOfTest(null, driver);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

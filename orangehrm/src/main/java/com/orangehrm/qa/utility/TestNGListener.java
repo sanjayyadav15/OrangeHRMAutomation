@@ -2,51 +2,73 @@ package com.orangehrm.qa.utility;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class TestNGListener implements ITestListener {
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.orangehrm.qa.base.TestBase;
 
-	@Override
+
+public class TestNGListener extends TestBase implements ITestListener {
+	ExtentTest test;
+	ExtentReports extent=ExtentReportNG.getReportObject();
+	ThreadLocal<ExtentTest> extentTest =new ThreadLocal<ExtentTest>();
 	public void onTestStart(ITestResult result) {
 		
-	}
-
-	@Override
-	public void onTestSuccess(ITestResult result) {
+		test= extent.createTest(result.getMethod().getMethodName());
+		extentTest.set(test);
 		
 	}
 
-	@Override
+	public void onTestSuccess(ITestResult result) {
+		
+		extentTest.get().log(Status.PASS, "Test Passed");
+	}
+
 	public void onTestFailure(ITestResult result) {
-		System.out.println("Test failed");
+		
+		//Screenshot
+		extentTest.get().fail(result.getThrowable());
+		WebDriver driver =null;
+		String testMethodName =result.getMethod().getMethodName();
+		
 		try {
-			TestUtil.takeScreenshotAtEndOfTest();
+			driver =(WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+		} catch(Exception e)
+		{
+			
+		}
+		try {
+			extentTest.get().addScreenCaptureFromPath(TestUtil.takeScreenshotAtEndOfTest(testMethodName,driver), result.getMethod().getMethodName());
+			
 		} catch (IOException e) {
+ 
 			e.printStackTrace();
 		}
 	}
 
-	@Override
 	public void onTestSkipped(ITestResult result) {
+ 
 		
 	}
 
-	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		
+		
 	}
 
-	@Override
-	public void onTestFailedWithTimeout(ITestResult result) {
-	}
-
-	@Override
 	public void onStart(ITestContext context) {
+		
+		
 	}
 
-	@Override
-	public void onFinish(ITestContext context) {
+	public void onFinish(ITestContext consstext) {
+		
+		extent.flush();
 	}
 
 }

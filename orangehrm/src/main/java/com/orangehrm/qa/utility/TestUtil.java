@@ -50,7 +50,7 @@ public class TestUtil extends TestBase {
 		return data;
 	}
 
-	public static String takeScreenshotAtEndOfTest() throws IOException {
+	public static String takeScreenshotAtEndOfTest(String testCaseName,WebDriver driver) throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
@@ -59,6 +59,7 @@ public class TestUtil extends TestBase {
 
 	}
 
+	
 	
 
 }
