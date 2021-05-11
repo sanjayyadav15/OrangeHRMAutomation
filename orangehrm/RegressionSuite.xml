@@ -4,9 +4,6 @@
 	<listeners>
 		<listener
 			class-name="com.orangehrm.qa.utility.TestNGListener"></listener>
-		<listener
-			class-name="com.qa.ExtentReportListener.ExtentReporterNG"></listener>
-
 	</listeners>
 
 	<test thread-count="5" name="Regression Test Cases">
