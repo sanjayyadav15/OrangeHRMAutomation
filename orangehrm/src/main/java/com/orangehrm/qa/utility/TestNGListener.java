@@ -33,7 +33,6 @@ public class TestNGListener extends TestBase implements ITestListener {
 		
 		//Screenshot
 		extentTest.get().fail(result.getThrowable());
-		WebDriver driver =null;
 		String testMethodName =result.getMethod().getMethodName();
 		
 		try {

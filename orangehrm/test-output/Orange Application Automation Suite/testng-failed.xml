@@ -3,7 +3,6 @@
 <suite name="Failed suite [Orange Application Automation Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.orangehrm.qa.utility.TestNGListener"/>
-    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
   </listeners>
   <test thread-count="5" name="Regression Test Cases(failed)">
     <classes>
@@ -14,13 +13,6 @@
           <include name="setup"/>
         </methods>
       </class> <!-- com.orangehrm.qa.testcases.LandingPageTest -->
-      <class name="com.orangehrm.qa.testcases.ContactSalesPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="clickOnBlogTest"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.orangehrm.qa.testcases.ContactSalesPageTest -->
     </classes>
   </test> <!-- Regression Test Cases(failed) -->
 </suite> <!-- Failed suite [Orange Application Automation Suite] -->

@@ -51,11 +51,12 @@ public class TestUtil extends TestBase {
 	}
 
 	public static String takeScreenshotAtEndOfTest(String testCaseName,WebDriver driver) throws IOException {
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		String currentDir = System.getProperty("user.dir");
-		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
-		//FileHandler.copy(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
-		return currentDir;
+		TakesScreenshot ts=(TakesScreenshot) driver;
+		File source =ts.getScreenshotAs(OutputType.FILE);
+		String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
+		FileUtils.copyFile(source,new File(destinationFile));
+		return destinationFile;
+
 
 	}
 

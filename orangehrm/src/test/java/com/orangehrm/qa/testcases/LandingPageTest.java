@@ -26,7 +26,7 @@ public void setup() {
 @Test(priority=1)
 public void validatetitleTest() {
 	String Title = LP.validatetitle();
-	Assert.assertEquals(Title, "HR Management System | HR Management Software | OrangeHRM");
+	Assert.assertEquals(Title, "HR Management System | HR Management  | OrangeHRM");
 }
 
 @Test(priority=2)
