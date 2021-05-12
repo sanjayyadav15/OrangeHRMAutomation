@@ -54,10 +54,10 @@ public class TestUtil extends TestBase {
 
 	public static String takeScreenshotAtEndOfTest(String testCaseName,WebDriver driver) throws IOException {
 		Date d = new Date();
-		SimpleDateFormat sdg = new SimpleDateFormat("YYYY-MM-dd HH-mm-ss");
+		SimpleDateFormat sdf = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
 		TakesScreenshot ts=(TakesScreenshot) driver;
 		File source =ts.getScreenshotAs(OutputType.FILE);
-		String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
+		String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+sdf.format(d)+".png";
 		FileUtils.copyFile(source,new File(destinationFile));
 		return destinationFile;
 
