@@ -6,19 +6,20 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
-
 import com.orangehrm.qa.utility.TestUtil;
-import com.orangehrm.qa.utility.WebEventListener;
 
 @SuppressWarnings("deprecation")
 public class TestBase {
 	
 	public static WebDriver driver;
 	public	static Properties prop;
+	 public static Logger log =LogManager.getLogger(TestBase.class.getName());
+
 	//public  static EventFiringWebDriver e_driver;
 	//public static WebEventListener eventListener;
 

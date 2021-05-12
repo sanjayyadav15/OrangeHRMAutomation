@@ -20,7 +20,7 @@ public class TestNGListener extends TestBase implements ITestListener {
 	public void onTestStart(ITestResult result) {
 		
 		test= extent.createTest(result.getMethod().getMethodName());
-		extentTest.set(test);
+		extentTest.set(test); 
 		
 	}
 

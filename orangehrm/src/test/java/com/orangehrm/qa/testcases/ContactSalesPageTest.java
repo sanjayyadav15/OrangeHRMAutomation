@@ -30,16 +30,21 @@ public class ContactSalesPageTest extends TestBase{
 	public void validateSocialMediaImageTest() {
 		boolean flag =CS.checkSocialMedia();
 		Assert.assertTrue(flag);
+      log.info("SocialMediaImageTest Validated");
 	}
 	
 	@Test(priority=2)
 	public void clickOnBlogTest() {
 		CS.clickBlog();
+		log.info("clickOnBlogTest validated");
+
 	}
 	
 	@AfterMethod()
 	public void tearDown() {
 		driver.quit();
+		log.info("browser closed");
+
 	}
 
 	

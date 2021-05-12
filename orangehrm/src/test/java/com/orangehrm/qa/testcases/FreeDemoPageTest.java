@@ -24,6 +24,7 @@ public FreeDemoPageTest() {
 @BeforeMethod()
 public void setup() {
 	initializeBrowser();
+	log.info("browser is initiated");
 	 LP = new LandingPage();
 	FDP = new FreeDemoPage();
 	testUtil = new TestUtil();
@@ -35,10 +36,13 @@ public void setup() {
 public void createUser() {
 	
 	FDP.createUser(prop.getProperty("FN"), prop.getProperty("LN"), prop.getProperty("EM"), prop.getProperty("PH"), prop.getProperty("CN"),prop.getProperty("ST"));
+  log.info("Create User method executed");
 }
 
 @DataProvider
 public Object[][] getOrangeTestData(){
+	log.info("Data Provider called");
+
 	Object data[][] = TestUtil.getTestData(sheetName);
 	return data;
 }
@@ -48,11 +52,14 @@ public Object[][] getOrangeTestData(){
 public void createMultiUser(String FN, String LN,String EM, String PH,String CN, String ST) {
 	
 	FDP.createUser(FN, LN, EM, PH, CN, ST);
+	log.info("Login with"+FN);
+
 }
 
 @AfterMethod()
 public void tearDown() {
 	driver.quit();
+	log.info("browser closed");
 }
 
 }
