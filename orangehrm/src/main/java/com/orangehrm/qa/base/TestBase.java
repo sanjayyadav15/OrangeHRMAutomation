@@ -30,7 +30,7 @@ public class TestBase {
 			prop=new Properties();
 			
 			try {
-				FileInputStream ip=new FileInputStream("F:\\OrangeHRM_Automation_Suite\\orangehrm\\src\\main\\java\\com\\orangehrm\\qa\\config\\config.properties");
+				FileInputStream ip=new FileInputStream("F:\\OrangeHRMAutomation\\orangehrm\\src\\main\\java\\com\\orangehrm\\qa\\config\\config.properties");
 				prop.load(ip);
 				
 				
@@ -45,7 +45,7 @@ public class TestBase {
 	public static void initializeBrowser() {
 	String BrowserName = prop.getProperty("browser");
 	if(BrowserName.equals("chrome")) {
-		System.setProperty("webdriver.chrome.driver", "F:\\OrangeHRM_Automation_Suite\\orangehrm\\src\\main\\java\\com\\orangehrm\\qa\\testdata\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "F:\\OrangeHRMAutomation\\orangehrm\\src\\main\\java\\com\\orangehrm\\qa\\testdata\\chromedriver.exe");
 		 driver = new ChromeDriver();
 	}
 	else if(BrowserName.equals("firefox")) {

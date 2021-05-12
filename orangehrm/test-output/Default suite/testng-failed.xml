@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.orangehrm.qa.testcases.FreeDemoPageTest">
+      <class name="com.orangehrm.qa.testcases.LandingPageTest">
         <methods>
+          <include name="validateLogoTest"/>
+          <include name="clickOnFreedemoTest"/>
           <include name="tearDown"/>
-          <include name="createUser"/>
+          <include name="validatetitleTest"/>
           <include name="setup"/>
-          <include name="createMultiUser" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- com.orangehrm.qa.testcases.FreeDemoPageTest -->
+      </class> <!-- com.orangehrm.qa.testcases.LandingPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

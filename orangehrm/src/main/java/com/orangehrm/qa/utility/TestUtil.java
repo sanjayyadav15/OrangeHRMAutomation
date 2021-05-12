@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -19,8 +21,8 @@ public class TestUtil extends TestBase {
 	
 	public static long PAGE_LOAD_TIMEUNIT =50;
 	public static long IMPLICIT_WAIT = 50;
-	public static String TESTDATA_SHEET_PATH = "F:\\OrangeHRM_Automation_Suite\\orangehrm"
-			+ "\\src\\main\\java\\com\\orangehrm\\qa\\testdata\\OrangehrmTestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = "F:\\OrangeHRMAutomation\\orangehrm\\"
+			+ "src\\main\\java\\com\\orangehrm\\qa\\testdata\\OrangehrmTestData.xlsx";
 
 	static Workbook book;
 	static Sheet sheet;
@@ -51,6 +53,8 @@ public class TestUtil extends TestBase {
 	}
 
 	public static String takeScreenshotAtEndOfTest(String testCaseName,WebDriver driver) throws IOException {
+		Date d = new Date();
+		SimpleDateFormat sdg = new SimpleDateFormat("YYYY-MM-dd HH-mm-ss");
 		TakesScreenshot ts=(TakesScreenshot) driver;
 		File source =ts.getScreenshotAs(OutputType.FILE);
 		String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
