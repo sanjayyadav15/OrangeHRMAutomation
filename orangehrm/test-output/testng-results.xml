@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-11T19:59:26 IST" name="Orange Application Automation Suite" finished-at="2021-05-11T20:02:12 IST" duration-ms="166719">
+  <suite started-at="2021-05-12T19:07:26 IST" name="Orange Application Automation Suite" finished-at="2021-05-12T19:10:34 IST" duration-ms="187149">
     <groups>
     </groups>
-    <test started-at="2021-05-11T19:59:26 IST" name="Regression Test Cases" finished-at="2021-05-11T20:02:12 IST" duration-ms="166719">
+    <test started-at="2021-05-12T19:07:26 IST" name="Regression Test Cases" finished-at="2021-05-12T19:10:34 IST" duration-ms="187149">
       <class name="com.orangehrm.qa.testcases.LandingPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.LandingPageTest@71e9ebae]" started-at="2021-05-11T19:59:26 IST" name="setup" finished-at="2021-05-11T19:59:38 IST" duration-ms="12487" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.LandingPageTest@46cf05f7]" started-at="2021-05-12T19:07:26 IST" name="setup" finished-at="2021-05-12T19:07:43 IST" duration-ms="16688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validatetitleTest()[pri:1, instance:com.orangehrm.qa.testcases.LandingPageTest@71e9ebae]" started-at="2021-05-11T19:59:38 IST" name="validatetitleTest" finished-at="2021-05-11T19:59:38 IST" duration-ms="67" status="FAIL">
+        <test-method signature="validatetitleTest()[pri:1, instance:com.orangehrm.qa.testcases.LandingPageTest@46cf05f7]" started-at="2021-05-12T19:07:43 IST" name="validatetitleTest" finished-at="2021-05-12T19:07:43 IST" duration-ms="48" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [HR Management System | HR Management  | OrangeHRM] but found [HR Management System | HR Management Software | OrangeHRM]]]>
@@ -24,7 +24,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.orangehrm.qa.testcases.LandingPageTest.validatetitleTest(LandingPageTest.java:29)
+at com.orangehrm.qa.testcases.LandingPageTest.validatetitleTest(LandingPageTest.java:37)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,67 +59,67 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatetitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.LandingPageTest@71e9ebae]" started-at="2021-05-11T19:59:40 IST" name="tearDown" finished-at="2021-05-11T19:59:41 IST" duration-ms="1058" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.LandingPageTest@46cf05f7]" started-at="2021-05-12T19:07:44 IST" name="tearDown" finished-at="2021-05-12T19:07:45 IST" duration-ms="925" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.LandingPageTest@71e9ebae]" started-at="2021-05-11T19:59:41 IST" name="setup" finished-at="2021-05-11T19:59:52 IST" duration-ms="11105" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.LandingPageTest@46cf05f7]" started-at="2021-05-12T19:07:45 IST" name="setup" finished-at="2021-05-12T19:07:57 IST" duration-ms="12304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validateLogoTest()[pri:2, instance:com.orangehrm.qa.testcases.LandingPageTest@71e9ebae]" started-at="2021-05-11T19:59:52 IST" name="validateLogoTest" finished-at="2021-05-11T19:59:52 IST" duration-ms="135" status="PASS">
+        <test-method signature="validateLogoTest()[pri:2, instance:com.orangehrm.qa.testcases.LandingPageTest@46cf05f7]" started-at="2021-05-12T19:07:57 IST" name="validateLogoTest" finished-at="2021-05-12T19:07:58 IST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLogoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.LandingPageTest@71e9ebae]" started-at="2021-05-11T19:59:52 IST" name="tearDown" finished-at="2021-05-11T19:59:55 IST" duration-ms="3435" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.LandingPageTest@46cf05f7]" started-at="2021-05-12T19:07:58 IST" name="tearDown" finished-at="2021-05-12T19:07:59 IST" duration-ms="1290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.LandingPageTest@71e9ebae]" started-at="2021-05-11T19:59:55 IST" name="setup" finished-at="2021-05-11T20:00:07 IST" duration-ms="12187" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.LandingPageTest@46cf05f7]" started-at="2021-05-12T19:07:59 IST" name="setup" finished-at="2021-05-12T19:08:11 IST" duration-ms="12232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="clickOnFreedemoTest()[pri:3, instance:com.orangehrm.qa.testcases.LandingPageTest@71e9ebae]" started-at="2021-05-11T20:00:07 IST" name="clickOnFreedemoTest" finished-at="2021-05-11T20:00:18 IST" duration-ms="10352" status="PASS">
+        <test-method signature="clickOnFreedemoTest()[pri:3, instance:com.orangehrm.qa.testcases.LandingPageTest@46cf05f7]" started-at="2021-05-12T19:08:11 IST" name="clickOnFreedemoTest" finished-at="2021-05-12T19:08:15 IST" duration-ms="3912" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnFreedemoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.LandingPageTest@71e9ebae]" started-at="2021-05-11T20:00:18 IST" name="tearDown" finished-at="2021-05-11T20:00:19 IST" duration-ms="710" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.LandingPageTest@46cf05f7]" started-at="2021-05-12T19:08:15 IST" name="tearDown" finished-at="2021-05-12T19:08:16 IST" duration-ms="899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.qa.testcases.LandingPageTest -->
       <class name="com.orangehrm.qa.testcases.ContactSalesPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.ContactSalesPageTest@73d983ea]" started-at="2021-05-11T20:00:19 IST" name="setup" finished-at="2021-05-11T20:00:37 IST" duration-ms="18410" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.ContactSalesPageTest@5851bd4f]" started-at="2021-05-12T19:08:16 IST" name="setup" finished-at="2021-05-12T19:08:30 IST" duration-ms="14499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validateSocialMediaImageTest()[pri:1, instance:com.orangehrm.qa.testcases.ContactSalesPageTest@73d983ea]" started-at="2021-05-11T20:00:37 IST" name="validateSocialMediaImageTest" finished-at="2021-05-11T20:00:37 IST" duration-ms="117" status="PASS">
+        <test-method signature="validateSocialMediaImageTest()[pri:1, instance:com.orangehrm.qa.testcases.ContactSalesPageTest@5851bd4f]" started-at="2021-05-12T19:08:30 IST" name="validateSocialMediaImageTest" finished-at="2021-05-12T19:08:31 IST" duration-ms="133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSocialMediaImageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.ContactSalesPageTest@73d983ea]" started-at="2021-05-11T20:00:37 IST" name="tearDown" finished-at="2021-05-11T20:00:38 IST" duration-ms="726" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.ContactSalesPageTest@5851bd4f]" started-at="2021-05-12T19:08:31 IST" name="tearDown" finished-at="2021-05-12T19:08:32 IST" duration-ms="1098" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.ContactSalesPageTest@73d983ea]" started-at="2021-05-11T20:00:38 IST" name="setup" finished-at="2021-05-11T20:00:56 IST" duration-ms="18336" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.ContactSalesPageTest@5851bd4f]" started-at="2021-05-12T19:08:32 IST" name="setup" finished-at="2021-05-12T19:08:50 IST" duration-ms="18812" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="clickOnBlogTest()[pri:2, instance:com.orangehrm.qa.testcases.ContactSalesPageTest@73d983ea]" started-at="2021-05-11T20:00:56 IST" name="clickOnBlogTest" finished-at="2021-05-11T20:00:56 IST" duration-ms="235" status="PASS">
+        <test-method signature="clickOnBlogTest()[pri:2, instance:com.orangehrm.qa.testcases.ContactSalesPageTest@5851bd4f]" started-at="2021-05-12T19:08:50 IST" name="clickOnBlogTest" finished-at="2021-05-12T19:08:51 IST" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnBlogTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.ContactSalesPageTest@73d983ea]" started-at="2021-05-11T20:00:56 IST" name="tearDown" finished-at="2021-05-11T20:00:57 IST" duration-ms="944" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.ContactSalesPageTest@5851bd4f]" started-at="2021-05-12T19:08:51 IST" name="tearDown" finished-at="2021-05-12T19:08:57 IST" duration-ms="5879" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.qa.testcases.ContactSalesPageTest -->
       <class name="com.orangehrm.qa.testcases.FreeDemoPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@36a5cabc]" started-at="2021-05-11T20:00:59 IST" name="setup" finished-at="2021-05-11T20:01:13 IST" duration-ms="14666" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@7cd1ac19]" started-at="2021-05-12T19:08:58 IST" name="setup" finished-at="2021-05-12T19:09:19 IST" duration-ms="20970" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createMultiUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@36a5cabc]" started-at="2021-05-11T20:01:13 IST" name="createMultiUser" data-provider="getOrangeTestData" finished-at="2021-05-11T20:01:15 IST" duration-ms="1743" status="PASS">
+        <test-method signature="createMultiUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@7cd1ac19]" started-at="2021-05-12T19:09:19 IST" name="createMultiUser" data-provider="getOrangeTestData" finished-at="2021-05-12T19:09:21 IST" duration-ms="2116" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -155,15 +155,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createMultiUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@36a5cabc]" started-at="2021-05-11T20:01:15 IST" name="tearDown" finished-at="2021-05-11T20:01:16 IST" duration-ms="928" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@7cd1ac19]" started-at="2021-05-12T19:09:21 IST" name="tearDown" finished-at="2021-05-12T19:09:22 IST" duration-ms="945" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@36a5cabc]" started-at="2021-05-11T20:01:16 IST" name="setup" finished-at="2021-05-11T20:01:31 IST" duration-ms="15037" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@7cd1ac19]" started-at="2021-05-12T19:09:22 IST" name="setup" finished-at="2021-05-12T19:09:37 IST" duration-ms="15036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createMultiUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@36a5cabc]" started-at="2021-05-11T20:01:31 IST" name="createMultiUser" data-provider="getOrangeTestData" finished-at="2021-05-11T20:01:33 IST" duration-ms="1643" status="PASS">
+        <test-method signature="createMultiUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@7cd1ac19]" started-at="2021-05-12T19:09:37 IST" name="createMultiUser" data-provider="getOrangeTestData" finished-at="2021-05-12T19:09:39 IST" duration-ms="2198" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -199,15 +199,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createMultiUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@36a5cabc]" started-at="2021-05-11T20:01:33 IST" name="tearDown" finished-at="2021-05-11T20:01:34 IST" duration-ms="948" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@7cd1ac19]" started-at="2021-05-12T19:09:39 IST" name="tearDown" finished-at="2021-05-12T19:09:41 IST" duration-ms="1593" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@36a5cabc]" started-at="2021-05-11T20:01:34 IST" name="setup" finished-at="2021-05-11T20:01:52 IST" duration-ms="18654" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@7cd1ac19]" started-at="2021-05-12T19:09:41 IST" name="setup" finished-at="2021-05-12T19:10:04 IST" duration-ms="23664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createMultiUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@36a5cabc]" started-at="2021-05-11T20:01:52 IST" name="createMultiUser" data-provider="getOrangeTestData" finished-at="2021-05-11T20:01:54 IST" duration-ms="1653" status="PASS">
+        <test-method signature="createMultiUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@7cd1ac19]" started-at="2021-05-12T19:10:04 IST" name="createMultiUser" data-provider="getOrangeTestData" finished-at="2021-05-12T19:10:06 IST" duration-ms="1801" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -243,19 +243,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createMultiUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@36a5cabc]" started-at="2021-05-11T20:01:54 IST" name="tearDown" finished-at="2021-05-11T20:01:55 IST" duration-ms="864" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@7cd1ac19]" started-at="2021-05-12T19:10:06 IST" name="tearDown" finished-at="2021-05-12T19:10:09 IST" duration-ms="2754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@36a5cabc]" started-at="2021-05-11T20:01:55 IST" name="setup" finished-at="2021-05-11T20:02:10 IST" duration-ms="15015" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@7cd1ac19]" started-at="2021-05-12T19:10:09 IST" name="setup" finished-at="2021-05-12T19:10:30 IST" duration-ms="21465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createUser()[pri:1, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@36a5cabc]" started-at="2021-05-11T20:02:10 IST" name="createUser" finished-at="2021-05-11T20:02:11 IST" duration-ms="1641" status="PASS">
+        <test-method signature="createUser()[pri:1, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@7cd1ac19]" started-at="2021-05-12T19:10:30 IST" name="createUser" finished-at="2021-05-12T19:10:32 IST" duration-ms="1899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@36a5cabc]" started-at="2021-05-11T20:02:11 IST" name="tearDown" finished-at="2021-05-11T20:02:12 IST" duration-ms="934" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.qa.testcases.FreeDemoPageTest@7cd1ac19]" started-at="2021-05-12T19:10:32 IST" name="tearDown" finished-at="2021-05-12T19:10:34 IST" duration-ms="1130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -5,8 +5,6 @@
     <classes>
       <class name="com.orangehrm.qa.testcases.LandingPageTest">
         <methods>
-          <include name="validateLogoTest"/>
-          <include name="clickOnFreedemoTest"/>
           <include name="tearDown"/>
           <include name="validatetitleTest"/>
           <include name="setup"/>

@@ -1,5 +1,7 @@
 package com.orangehrm.qa.testcases;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -13,6 +15,8 @@ import com.orangehrm.qa.pages.LandingPage;
 public class LandingPageTest extends TestBase{
 	LandingPage LP;
 	FreeDemoPage FDP;
+	 public static Logger log =LogManager.getLogger(TestBase.class.getName());
+
 
 public LandingPageTest() {
 	super();
