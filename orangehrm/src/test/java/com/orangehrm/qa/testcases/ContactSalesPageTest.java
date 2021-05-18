@@ -46,7 +46,7 @@ public class ContactSalesPageTest extends TestBase{
 	@AfterMethod()
 	public void tearDown() {
 		driver.quit();
-		log.info("browser closed");
+		log.info("browser Quit");
 
 	}
 
