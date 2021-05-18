@@ -33,7 +33,7 @@ public class ContactSalesPageTest extends TestBase{
 	public void validateSocialMediaImageTest() {
 		boolean flag =CS.checkSocialMedia();
 		Assert.assertTrue(flag);
-      log.info("SocialMediaImageTest Validated");
+      log.info("SocialMediaImageTest Validated ");
 	}
 	
 	@Test(priority=2)
